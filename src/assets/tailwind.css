@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .firstBtn {
+       @apply absolute top-0 right-0 rotate-90 origin-bottom-left translate-x-full translate-y-[200px]  text-bgColor bg-gradient-to-r from-purple-500 to-greenLight hover:bg-gradient-to-l focus:ring-4 focus:outline-none  font-medium rounded-lg text-lg px-10 py-5 text-center mr-2 mb-2 cursor-pointer
+    }
+    .secondBtn {
+        @apply absolute top-0 right-0 rotate-90 origin-bottom-left translate-x-full   text-bgColor bg-gradient-to-r from-purple-500 to-greenLight hover:bg-gradient-to-l focus:ring-4 focus:outline-none  font-medium rounded-lg text-lg px-10 py-5 text-center mr-2 mb-2 cursor-pointer
+    }
+    .inputStyle {
+        @apply bg-gray-200 w-20 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-lg text-greenLight  focus:outline-none focus:bg-bgColor focus:border-greenLight my-4
+    }
+    .income {
+        @apply  focus:outline-none text-bgColor bg-textColor hover:bg-bgColor hover:text-textColor focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 cursor-pointer my-24
+    }
+    .calculate {
+        @apply focus:outline-none text-bgColor bg-greenLight hover:bg-bgColor hover:text-greenLight focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  w-72 mb-4 cursor-pointer
+    }
+    .app {
+        @apply  w-[65vw] h-[80vh] relative shadow-[0_0_10px] shadow-greenLight
+    }
+    .first {
+        @apply w-[65vw] h-[80vh] absolute top-0 left-0 bg-pozadina text-textColor 
+    }
+    .second {
+        @apply w-[65vw] h-[80vh] absolute top-0 left-0 bg-pozadina text-textColor 
+    }
+    .core {
+        @apply flex flex-col text-3xl w-[40vw] mt-5 ml-8
+    }
+    /*.nesto {
+        @apply   shadow-greenLight w-4/6 h-3/5 
+    }*/
+        .bord {
+            @apply border-b-2 border-solid border-gray-400 hover:bg-greenLight hover:text-bgColor cursor-pointer
+        }
+    .tabela {
+    @apply grid grid-cols-4 grid-rows-5 bg-bgColor text-purple-300 text-center ml-5 mr-5 p-5
+    }
+    .section {
+        @apply flex flex-col bg-textColor mt-5 ml-8 mr-8 pb-8 
+    }
+    .net {
+        @apply flex-row justify-start ml-5 items-center mt-5
+    }
+        .footer {
+            @apply flex flex-col bg-bgColor mt-5 ml-8 mr-8 pb-8 
+        }
+}
